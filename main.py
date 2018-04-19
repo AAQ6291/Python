@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 #from config import DevConfig
-app = Flask(__name__)
+
+# 初始化 Flask 類別成為 instance
+app = Flask(__name__)  # Flask application 的核心物件
 # app.config.from_object(DevConfig)
 
 
@@ -10,8 +12,9 @@ def index():
 
 
 @app.route('/hello/')
-def hello():
-    return 'Hello World!'
+@app.route('/hello/<name>')
+def hello(name=None):
+    return render_template('hello.html', name=name)
 
 
 @app.route('/user/<username>')
@@ -41,4 +44,4 @@ def show_the_login_form():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run()  # 產生一個可以動的 web server
