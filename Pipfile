@@ -12,9 +12,3 @@ flask = "*"
 
 [dev-packages]
 
-
-{
-    "python.venvPath": "C:\Users\angela_kuo\.virtualenvs\Python-914yiTxL",
-    "python.pythonPath": "C:\Users\angela_kuo\.virtualenvs\Python-914yiTxL",
-    "python.linting.enabled": true #如果嫌煩就false
-}
