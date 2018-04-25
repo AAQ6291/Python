@@ -1,7 +1,25 @@
 {
-    "python.venvPath": "C:\\Users\\angela_kuo\\.virtualenvs\\Python-914yiTxL",
-    "python.pythonPath": "C:\\Users\\angela_kuo\\.virtualenvs\\Python-914yiTxL",
-    "python.linting.enabled": true,
-    "window.zoomLevel": 1,
-    "git.ignoreLimitWarning": true
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flask",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${config:python.venvPath}/bin/flask",
+            "env": {
+                "FLASK_APP": "${workspaceRoot}/main.py"
+            },
+            "args": [
+                "run",
+                "--host=localhost",
+                "--port=8080"
+            ],
+            "debugOptions": [
+                "DebugStdLib",
+                "RedirectOutput"
+            ]
+        }
+    ]
 }
