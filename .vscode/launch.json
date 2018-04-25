@@ -7,9 +7,9 @@
             "request": "launch",
             "stopOnEntry": false,
             "pythonPath": "${config:python.pythonPath}",
-            "program": "${config:python.venvPath}/bin/flask",
+            "program": "${config:python.venvPath}\bin\flask",
             "env": {
-                "FLASK_APP": "${workspaceRoot}/main.py"
+                "FLASK_APP": "${workspaceRoot}\main.py"
             },
             "args": [
                 "run",
