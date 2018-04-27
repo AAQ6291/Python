@@ -2,6 +2,7 @@
     "python.venvPath": "C:\\Users\\angela_kuo\\.virtualenvs\\Python-914yiTxL",
     "python.pythonPath": "C:\\Users\\angela_kuo\\.virtualenvs\\Python-914yiTxL",
     "python.linting.enabled": true,
+    "editor.fontSize": 15,
     "window.zoomLevel": 1,
     "git.ignoreLimitWarning": true
 }

@@ -1,25 +1,29 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Flask",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config:python.pythonPath}",
-            "program": "${config:python.venvPath}\Lib\site-packages\flask",
-            "env": {
-                "FLASK_APP": "${workspaceRoot}\main.py"
-            },
-            "args": [
-                "run",
-                "--host=localhost",
-                "--port=8080"
-            ],
-            "debugOptions": [
-                "DebugStdLib",
-                "RedirectOutput"
-            ]
-        }
-    ]
+        "version": "0.2.0",
+        "configurations": [
+                {
+                        "name": "Flask",
+                        "type": "python",
+                        "request": "launch",
+                        "stopOnEntry": false,
+                        "pythonPath": "${config:python.pythonPath}",
+                        "program": "${config:python.venvPath}\\Lib\\site-packages\\flask",
+                        "module": "flask",
+                        "env": {
+                                "FLASK_APP": "${workspaceRoot}\\main.py"
+                        },
+                        "args": [
+                                "run",
+                                "--no-debugger",
+                                "--no-reload",
+                                "--host=localhost",
+                                "--port=8080"
+                        ],
+                        "envFile": "${config:python.venvPath}",
+                        "debugOptions": [
+                                "DebugStdLib",
+                                "RedirectOutput"
+                        ]
+                }
+        ]
 }
