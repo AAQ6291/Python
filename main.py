@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, make_response
 #from config import DevConfig
 
 # 初始化 Flask 類別成為 instance
@@ -8,7 +8,7 @@ app = Flask(__name__)  # Flask application 的核心物件
 
 @app.route('/')
 def index():
-    return 'Index Page'
+    return render_template('index.html')
 
 
 @app.route('/hello/')
@@ -27,22 +27,17 @@ def show_post(post_id):
     return 'Post %d' % post_id
 
 
+@app.route('/signin/')
+def signin():
+    return render_template('login.html')
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        # do_the_login()
         return 'login.....'
     else:
-        # show_the_login_form()
         return 'show login form'
-
-
-def do_the_login():
-    return 'login.....'
-
-
-def show_the_login_form():
-    return 'show login form'
 
 
 if __name__ == '__main__':

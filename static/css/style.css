@@ -1,0 +1,70 @@
+body { 
+	-moz-user-select: none;  /* for Firefox 滑鼠禁選頁面 */ 
+	-moz-text-size-adjust:100%; 
+	-webkit-user-select: none;   /* for Chrome  滑鼠禁選頁面 */
+	-webkit-text-size-adjust:100%; 	
+	color:#6a6a6a;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:18px;
+	line-height:21px;
+ }
+h1, h2, h3, h4, h5, h6, .copyRight { 
+	font-family: "微軟正黑體",Arial,Helvetica, "Tinos", san-serif;			
+	font-weight: bold;
+}
+nav {font-family:  '微軟正黑體', Helvetica, Arial, serif, sans-serif; }
+
+body { background:#e1e1e1 repeat 0 0; padding:45px 0 0 0  }
+.bg { background:no-repeat center bottom; width:500px; margin:0 auto; padding-bottom:32px;}
+.pageWidth { background:#ffffff;  width:1000px; margin:0 auto; box-shadow:0 0 10px rgba(0,0,0,0.50);}
+.w3-button span {cursor:pointer}
+
+header, nav, section, footer { display:block;}
+
+a:focus{ outline:none;}
+a { text-decoration:none; color:#393939;}
+a:hover { color:#003d66 ; text-decoration:underline;cursor: pointer;}
+
+nav { font-size:16px; line-height:20px; margin-bottom:21px; text-align:center }
+nav ul { border:solid 1px #e8e8e8; border-width:1px 0 1px 0; padding:5px 0; margin:0 22px; }
+nav li { text-align:center; display:inline;margin:0 15px }
+nav li a { color:#585858; display:inline-block; padding:2px 23px 0 27px; line-height:28px; }
+nav li a:hover, nav li.active a { background:#f0eded; color:#585858;  }
+nav li:first-child { background:none; }
+	
+#menu { display:none; color:#585858; font-size:16px; background:url(../img/menu-img.png) no-repeat 97% 15px; padding:15px 0 15px 3%; text-align:left;  }
+
+#banner { text-align:center; margin-bottom:10px; }
+#banner img { background-size:cover; } 
+
+#container { padding:0 0 25px 0; } 
+article ul li { padding-left:15px;}
+article ul li:before{ content:'B'; text-indent:-5px; font-weight:bold; font-size:60px; height:5px; line-height:5px; width:5px; border-radius:10px;  vertical-align:middle; float:left;  margin-left:-15px; overflow:hidden; margin-top:8px; }
+article ol { margin-left:15px; }
+article ol li { list-style:decimal; }
+
+.pageControl{ padding:0 20px;
+ transform: translate(0px, 0px);
+-webkit-transform: translate(0px, 0px);
+-moz-transform: translate(0px, 0px);
+-o-transform: translate(0px, 0px);
+-ms-transform: translate(0px, 0px);}
+
+.activepage .pageControl{transform: translate(-1000px, 0px);
+-webkit-transform: translate(-1000px, 0px);
+-moz-transform: translate(-1000px, 0px);
+-o-transform: translate(-1000px, 0px);
+-ms-transform: translate(-1000px, 0px);
+}
+
+#footer { text-align:center; padding:10px 0 10px 0; text-transform:capitalize; background:#70747a; color:#ffffff; }
+.copyRight {text-align:center;opacity:0.70; }
+#wrapper, #widecolumn, aside, nav li{transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;}
+
+/*
+「郵件」的<input>元素必須是按以下順序：「。」 字符 @ 域 字符 （字符後跟一個@符號，其次是更多的字符 」。」
+sign, you can only write 2 to 3 letters from a to z: 簽字，你只能寫從2〜3個字母A到Z： 
+*/
+#email{	pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$";	}
+#pwd{pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(/\s/g'').{20,}";}
+#mobile_phone{pattern="09[1-8][0-9]([\-|\s]?)[0-9]{3}\1[0-9]{3}";}
