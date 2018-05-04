@@ -17,4 +17,15 @@ print(html.geturl())
 # 網頁狀態碼
 # 200:正常訪問, 301:重新定向, 404:網頁不存在, 403:網頁禁止訪問或不存在, 500:網頁忙碌中
 print("-- iCook 網頁狀態碼 -- \n")
-print(html.getcode())
+rscode = html.getcode()
+
+if (rscode == 200):
+    print("-- 網頁連結正常 -- Code : ", str(rscode))
+elseif(rscode == 301):
+    print("-- 網頁已永久改變網址 -- Code : ", str(rscode))
+elseif(rscode == 404):
+    print("-- 網頁已不存在 -- Code : ", str(rscode))
+elseif(rscode == 403):
+    print("-- 網頁禁止訪問或不存在 -- Code : ", str(rscode))
+elseif(rscode == 500):
+    print("-- 網頁忙錄中 -- Code: ", str(rscode))
