@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, make_response
+from flask import Flask, render_template, request, redirect, make_response, abort
 #from config import DevConfig
 
 # 初始化 Flask 類別成為 instance
@@ -15,6 +15,13 @@ def index():
 @app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html', name=name)
+
+
+@app.route('/openfile/')
+def openfile():
+    file = open('test.txt', 'r')
+    contect = file.read()
+    print(contect)
 
 
 @app.route('/user/<username>')

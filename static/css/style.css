@@ -1,18 +1,28 @@
+/* 楷體字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+/* 圓體字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/* 仿宋體字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* 黑體（思源黑體）字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* 明體字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 body { 
 	-moz-user-select: none;  /* for Firefox 滑鼠禁選頁面 */ 
 	-moz-text-size-adjust:100%; 
 	-webkit-user-select: none;   /* for Chrome  滑鼠禁選頁面 */
 	-webkit-text-size-adjust:100%; 	
 	color:#6a6a6a;
-	font-family: Arial, Helvetica, sans-serif; 
+	font-family:  'cwTeXYen','cwTeXKai','Noto Sans TC', "微軟正黑體", Arial, Helvetica, sans-serif; 
 	font-size:18px;
 	line-height:21px;
  }
 h1, h2, h3, h4, h5, h6, .copyRight { 
-	font-family: "微軟正黑體",Arial,Helvetica, "Tinos", san-serif;			
+	font-family: 'cwTeXYen','cwTeXKai','Noto Sans TC', "微軟正黑體",Arial,Helvetica, "Tinos", san-serif;			
 	font-weight: bold;
 }
-nav {font-family:  '微軟正黑體', Helvetica, Arial, serif, sans-serif; }
+nav {font-family: 'cwTeXYen','cwTeXKai','Noto Sans TC', '微軟正黑體', Helvetica, Arial, serif, sans-serif;  }
 
 body { background:#e1e1e1 repeat 0 0; padding:45px 0 0 0  }
 .bg { background:no-repeat center bottom; width:500px; margin:0 auto; padding-bottom:32px;}
