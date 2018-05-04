@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, make_response, abort
+
 #from config import DevConfig
 
 # 初始化 Flask 類別成為 instance
@@ -17,11 +18,9 @@ def hello(name=None):
     return render_template('hello.html', name=name)
 
 
-@app.route('/openfile/')
-def openfile():
-    file = open('test.txt', 'r')
-    contect = file.read()
-    print(contect)
+@app.route('/ptt/title', methods=['GET'])
+def searchTitle():
+    return request.args.get('keyword')
 
 
 @app.route('/user/<username>')
