@@ -1,4 +1,5 @@
 # 範例--讀取icook網頁資料
+# 參考網址:http://tw.gitbook.net/python/python3-webbug-series1.html
 from urllib.request import urlopen
 
 # 抓取網頁資料
@@ -21,11 +22,11 @@ rscode = html.getcode()
 
 if (rscode == 200):
     print("-- 網頁連結正常 -- Code : ", str(rscode))
-elseif(rscode == 301):
+elif(rscode == 301):
     print("-- 網頁已永久改變網址 -- Code : ", str(rscode))
-elseif(rscode == 404):
+elif(rscode == 404):
     print("-- 網頁已不存在 -- Code : ", str(rscode))
-elseif(rscode == 403):
+elif(rscode == 403):
     print("-- 網頁禁止訪問或不存在 -- Code : ", str(rscode))
-elseif(rscode == 500):
+elif(rscode == 500):
     print("-- 網頁忙錄中 -- Code: ", str(rscode))
