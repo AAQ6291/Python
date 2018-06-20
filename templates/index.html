@@ -8,15 +8,25 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+<link rel="stylesheet" type="text/css" href="static/css/index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<script src="/static/js/index.js"></script>
+<script src="static/js/index.js"></script>
+<style>
+    /* Full height image header */
+
+    .bgimg-2 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../static/images/mbr-1.jpg");
+        min-height: 100%;
+    }
+</style>
 
 <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+            <a href="http://www.liveabc.com/index.asp" class="w3-bar-item w3-button w3-wide">LOGO</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -48,8 +58,8 @@
     </nav>
 
     <!-- Header with full-height image -->
-    <header class="w3-display-container w3-grayscale-min" id="home">
-        <div class="bgimg-1 w3-display-left w3-text-white" style="padding:48px">
+    <header class="bgimg-2 w3-display-container" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
             <span class="w3-jumbo w3-hide-small">Start something that matters</span>
             <br>
             <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span>
@@ -96,8 +106,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
