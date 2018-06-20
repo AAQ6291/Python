@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login HTML </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/formstyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="bg">
-        <form name="login" method="POST" class="w3-container w3-card-4">
+        <form name="login" method="POST" action="/login" class="w3-container w3-card-4">
+            <div id="logo" class="w3-container w3-blue">
+                <h2>{{ user_template }} 登入頁面-範例</h2>
+            </div>
+            <p>
+                <img src="static/images/banner-1.jpg" alt="">
+
+            </p>
             <p>
                 <label>User ID :</label>
-                <input id="email" name="email" class="w3-input" type="text" required autofocus>
+                <input name="username" class="w3-input" type="text" required autofocus>
             </p>
             <p>
                 <label>Password :</label>
-                <input id="pwd" name="pwd" class="w3-input" type="password" required>
+                <input name="pwd" class="w3-input" type="password" required>
             </p>
             <p style="margin-top:5px">
                 <button id="submit" type="submit" class="w3-btn w3-blue w3-border w3-border-blue w3-round-xlarge">Sign In</button>

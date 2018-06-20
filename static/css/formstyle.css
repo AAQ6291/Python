@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+form {
+  font-family: "微軟正黑體",Arial,Helvetica,san-serif;
+  font-size: 18px !important;
+  font-weight: bold;
+  border-radius: 5px;
+  max-width: 800px;
+  width: 100%;
+  margin: 1.5% auto;
+  background-color: #ffffff;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+
+form input {
+  border: 1px solid #ccc !important;
+}
+
+form input:hover {
+  border-color: #2196f3 !important;
+}
+
+form input:focus {
+  border: 1px solid #ccc !important;
+  border-color: #0b7dda !important;
+  background-color: #ffffff !important;
+}
+
+form .select {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #555;
+  border: 1px solid #ccc !important;
+  text-shadow: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: box-shadow 0.25s ease;
+  -o-transition: box-shadow 0.25s ease;
+  -webkit-transition: box-shadow 0.25s ease;
+  transition: box-shadow 0.25s ease;
+}
+
+form .select:hover {
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border-color: #2196f3 !important;
+}
+
+.btn_font {
+  font-family: "微軟正黑體",Arial,Helvetica,san-serif;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+#jsnins_Sub header {
+  background-color: #f2f2f2;
+  font-family: "微軟正黑體",Arial,Helvetica,san-serif;
+  font-weight: bold;
+}
+

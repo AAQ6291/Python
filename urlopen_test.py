@@ -1,11 +1,13 @@
 # 範例--讀取icook網頁資料
 # 參考網址:http://tw.gitbook.net/python/python3-webbug-series1.html
 from urllib.request import urlopen
+from urllib.parse import urlparse
 
 # 抓取網頁資料
 html = urlopen("http://icook.tw/")
 print("-- iCook 首頁HTML -- \n")
-print(html.read().decode('utf-8'))
+data = html.read().decode('utf-8')
+print(data)
 
 # 讀取Html Header 資訊
 print("-- Header 資訊 -- \n")
@@ -30,3 +32,11 @@ elif(rscode == 403):
     print("-- 網頁禁止訪問或不存在 -- Code : ", str(rscode))
 elif(rscode == 500):
     print("-- 網頁忙錄中 -- Code: ", str(rscode))
+
+# 抓取iCook上搜尋關鍵詞"抹茶"的網頁
+## 定義一個字典 -- data
+data = {'word': ''}
+data['word'] = '抹茶'
+print("搜尋關鍵詞 :", data['word'])
+
+#
