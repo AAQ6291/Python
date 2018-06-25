@@ -37,6 +37,8 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+//Control Div Display
 function block_Display(idName, yn) {
     //* Div-- 頁面顯示控制    
     if (yn = 'T') {
