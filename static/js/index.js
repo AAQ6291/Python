@@ -37,3 +37,12 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+function block_Display(idName, yn) {
+    //* Div-- 頁面顯示控制    
+    if (yn = 'T') {
+        $("#" + idName).css("display", "block");// 區塊，元素會以區塊方式呈現，除非設定 position 或 float。
+    } else {
+        $("#" + idName).css("display", "none");
+    }
+
+}

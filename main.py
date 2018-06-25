@@ -1,10 +1,14 @@
-from flask import Flask, render_template, request, redirect, make_response, abort
+from flask import Flask, render_template, request, redirect, make_response, abort, url_for
 import urllib
 #from config import DevConfig
 
 # 初始化 Flask 類別成為 instance
 app = Flask(__name__)  # Flask application 的核心物件
 # app.config.from_object(DevConfig)
+
+
+def do_the_login(namestr):
+    return render_template('hello.html', name=namestr)
 
 
 @app.route('/')
@@ -16,11 +20,6 @@ def index():
 @app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html', name=name)
-
-
-@app.route('/ptt/title', methods=['GET'])
-def searchTitle():
-    return request.args.get('keyword')
 
 
 @app.route('/user/<username>')
@@ -44,9 +43,20 @@ def show_post(post_id):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        # return 'Hello !' + request.values['username']
         name = request.values['username'] + ' Welcome here!'
         return render_template('hello.html', name=name)
+        # do_the_login(name)
+    else:
+        # 注意1：user_template是送到前端去的參數，命名上為了有所區隔，所以我加上了_template處理完python文件之後，再來就是要將我們送到前端的參數加到html上!
+        user = 'login test '
+        return render_template('login.html', user_template=user)  # 轉至login頁面
+
+
+@app.route('/loginHome', methods=['GET', 'POST'])
+def loginHome():
+    if request.method == 'POST':
+        name = request.values['username'] + ' Welcome!'
+        return render_template('index.html', name=name)
     else:
         # 注意1：user_template是送到前端去的參數，命名上為了有所區隔，所以我加上了_template處理完python文件之後，再來就是要將我們送到前端的參數加到html上!
         user = 'login test '
