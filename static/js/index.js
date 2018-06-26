@@ -39,9 +39,9 @@ function w3_close() {
 }
 
 //Control Div Display
-function block_Display(idName, yn) {
+function block_Display(idName, bFlag) {
     //* Div-- 頁面顯示控制    
-    if (yn = 'T') {
+    if (bFlag = 'T') {
         $("#" + idName).css("display", "block");// 區塊，元素會以區塊方式呈現，除非設定 position 或 float。
     } else {
         $("#" + idName).css("display", "none");

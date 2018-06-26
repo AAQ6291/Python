@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, redirect, make_response, abort, url_for
+
 import urllib
+
+#from flask_sqlalchemy import SQLAlchemy
+
 #from config import DevConfig
 
 # 初始化 Flask 類別成為 instance
