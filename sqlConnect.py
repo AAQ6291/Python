@@ -3,11 +3,11 @@ import pymssql
 
 
 class MSSQL:
-    def __init__(self, host, user, pwd, db):
-        self.host = host  # Server
-        self.user = user  # user
-        self.pwd = pwd  # pwd
-        self.db = db  # database
+    def __init__(self):
+        self.host = "61.63.36.252"  # Server
+        self.user = "readygo"  # user
+        self.pwd = "readygo16161396"  # pwd
+        self.db = "readygo"
 
     def __GetConnect(self):
         try:
@@ -53,23 +53,6 @@ class MSSQL:
             self.conn.close()
 
 
-def main():
-    # ms = MSSQL(host="localhost",user="sa",pwd="123456",db="PythonWeiboStatistics")
-    # 返回的是一個包含tuple的list，list的元素是記錄行，tuple的元素是每行記錄的欄位
-
-    server = "61.63.36.252"
-    database = "readygodb"
-    username = "sareadygo"
-    password = "readygoxxxxxxxx"
-    #
-    ms = MSSQL(host=server, user=username,
-               pwd=password, db=database)
-    resList = ms.ExecQuery(
-        "SELECT Prd_ID, Prd_Name, SNHead FROM Product")
-
-    print("資料總筆數(List): ", len(resList))  # 印出resList長度
-    print("每筆資料欄位數(Tuple): ", len(resList[0]))  # 印出resList欄位數
-
-
 if __name__ == '__main__':
-    main()
+    # resList = ms.ExecQuery("SELECT Prd_ID, Prd_Name, SNHead FROM Product")
+    MSSQL = MSSQL()
