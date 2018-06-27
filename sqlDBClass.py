@@ -4,10 +4,10 @@ import pymssql
 
 class sqlDB():
     def __init__(self):
-        self.host = "61.63.360.252"
-        self.db = "readygo"
-        self.user = "sareadygosa"
-        self.pwd = "readygoxxxx16161396"
+        self.host = "61.63.36.252"
+        self.db = "readygosdb"
+        self.user = "readygosus"
+        self.pwd = "readygoxxx16161396"
 
     def __GetConnect(self):
         try:

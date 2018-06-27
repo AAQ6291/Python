@@ -52,11 +52,15 @@ def loginHome():
         print("資料總筆數(List): ", recno)  # 印出resList長度
         if recno == 0:
             name = "資料輸入錯誤! 請重新輸入!"
+        else:
+            name = "Hello！" + resList[0][1]
         return render_template('index.html', name=name)
-    else:
-        # 注意1：user_template是送到前端去的參數，命名上為了有所區隔，所以我加上了_template處理完python文件之後，再來就是要將我們送到前端的參數加到html上!
-        user = 'login test '
-        return render_template('login.html', user_template=user)  # 轉至login頁面
+
+
+@app.route('/logOut')
+def logOut():
+    name = ''
+    return render_template('index.html', name=name)
 
 
 if __name__ == '__main__':

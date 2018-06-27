@@ -57,10 +57,10 @@ def main():
     # ms = MSSQL(host="localhost",user="sa",pwd="123456",db="PythonWeiboStatistics")
     # 返回的是一個包含tuple的list，list的元素是記錄行，tuple的元素是每行記錄的欄位
 
-    server = "61.63.36.252"
+    server = "61.063.36.252"
     database = "readygodb"
-    username = "sareadygo"
-    password = "readygoxxxxxxxx"
+    username = "readygoxxxx"
+    password = "xxxxreadygo"
     #
     ms = MSSQL(host=server, user=username,
                pwd=password, db=database)

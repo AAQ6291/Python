@@ -29,10 +29,18 @@
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="http://www.liveabc.com/index.asp" class="w3-bar-item w3-button w3-wide">
                 LOGO {% if name %}
-                <span> {{ name }} </span>
+                <span style="padding:48px">
+                    {{ name }}
+                </span>
                 <script>block_Display('loginFrm', 'F');</script> {% else %} {% endif %}
             </a>
             <!-- Right-sided navbar links -->
+            {% if name %}
+            <div class="w3-right w3-hide-small">
+                <a href="../logOut" class="w3-bar-item w3-button">
+                    <i class="fa fa-sign-out"></i> LogOut</a>
+            </div>
+            {% endif %}
             <div class="w3-right w3-hide-small">
                 <a href="#contact" class="w3-bar-item w3-button" onclick="block_Display('contact','T');">
                     <i class="fa fa-envelope"></i> CONTACT</a>
@@ -153,7 +161,6 @@
                 <i class="fa fa-paper-plane "></i> SEND MESSAGE
             </button>
         </form>
-    </div>
     </div>
 </body>
 
