@@ -1,0 +1,128 @@
+﻿callback(
+{ 
+   "chapterlists": 
+   [
+      {
+         "UnitID": "1",
+         "UnitName": "求婚法國大餐",
+         "UnitEng": "A French Dinner with a Marriage Proposal ",
+         "SectionID": "1",
+         "Type": ["VL","VL","VL","VL","VL"],
+         "ChapterID": ["01","02","03","04","05"],
+         "ENG_Title": ["Meet This Romantic Guy, Griff Gilbert",
+                       "Let's Braise Beef in Red Wine",
+                       "Preparing the Roasted Sea Scallop on the Bed of Tomatoes",
+                       "The Girl is Home, Serving a Marriage Proposal!",
+                       "Cheese with Lavender Honey, and an Engagement Ring!"
+                      ],
+         "CHT_Title": ["1-1  浪漫的葛利夫",
+                       "1-2  紅酒燉牛肉",
+                       "1-3  干貝番茄沙拉",
+                       "1-4  女主角回來，上菜囉！",
+                       "1-5  起司薰衣草蜂蜜，外加求婚戒指！"
+                      ]      
+      },      
+      {
+         "UnitID": "2",
+         "UnitName": "夏令營快樂兒童",
+         "UnitEng": "Happy Meals for Happy Campers ",
+         "SectionID": "2",
+         "Type": ["VL","VL","VL","VL","VL"],
+         "ChapterID": ["06","07","08","09","10"],
+         "ENG_Title": ["A Loving Camp Counselor,『Shadow』",
+                       "Excited Young Campers",
+                       "Let's Make Parsley and Garlic Butter",
+                       "Time for Lobster Pizzas",
+                       "Serving a Frozen Yogurt Sundae with Peaches and Raspberries"
+                      ],
+         "CHT_Title": ["2-1  充滿愛的輔導員「影子」",
+                       "2-2  活潑的夏令營小朋友",
+                       "2-3  歐芹大蒜奶油醬",
+                       "2-4  龍蝦比薩",
+                       "2-5  鮮桃覆盆子優格冰淇淋聖代"
+                      ]      
+      },         
+      {
+         "UnitID": "3",
+         "UnitName": "有益心臟的健康生日餐",
+         "UnitEng": "Heart-Healthy Meals for the Birthday Girls",
+         "SectionID": "3",
+         "Type": ["VL","VL","VL","VL"],
+         "ChapterID": ["11","12","13","14"],
+         "ENG_Title": ["Twin Sisters who Support Each Other",
+                       "Making an Angel Food Cake",                       
+                       "Now, It's Gazpacho, which is a Chilled Tomato Soup",
+                       "Finally, Spinach Salad with Chicken Tenders"
+                      ],
+         "CHT_Title": [
+                       "3-1  互相扶持的雙胞胎姊妹",
+                       "3-2  天使蛋糕",                       
+                       "3-3  西班牙冷湯",
+                       "3-4  雞肉菠菜沙拉"
+                      ]      
+      },  
+      {
+         "UnitID": "4",
+         "UnitName": "結婚週年的海鮮大餐",
+         "UnitEng": "Gourmet Seafood Dinner for an Anniversary ",
+         "SectionID": "4",
+         "Type": ["VL","VL","VL","VL","VL"],
+         "ChapterID": ["15","16","17","18","19"],
+         "ENG_Title": ["Charming Modern Cowboy, Dale Gibson",
+                       "How About Grilled Scallops with Fava Beans Salad",
+                       "Design an Easy Way to do a Clambake",
+                       "Blueberry Cakes, Cowboy Style",
+                       "Enjoying the Perfect Anniversary"
+                      ],
+         "CHT_Title": ["4-1  帥氣牛仔戴爾",
+                       "4-2  烤干貝蠶豆沙拉",
+                       "4-3  鱸魚烤蛤餐",
+                       "4-4  藍莓小蛋糕",
+                       "4-5  享受完美的結婚紀念日"
+                      ]      
+      },
+      {
+         "UnitID": "5",
+         "UnitName": "嗆辣墨西哥料理",         
+         "UnitEng": "Try This Spicy Mexican Cuisine ",
+         "SectionID": "5",
+         "Type": ["VL","VL","VL","VL","VL"],
+         "ChapterID": ["20","21","22","23","24","25"],
+         "ENG_Title": ["Meet a Prankster Rey, a Firefighter",
+                       "Purchasing Chilies and Strategizing a Surprise",
+                       "Carne Adovada, Pork Marinated in a Chili Sauce",
+                       "Hot Mexican Garlic Soup",
+                       "A Tasty Southwestern Pastry, Sopapillas",
+                       "A Practical Joke on the Firefighters"
+                      ],
+         "CHT_Title": ["5-1  愛搞笑的消防員雷伊",
+                       "5-2  採買辣椒，策劃驚喜",
+                       "5-3  辣椒燉豬肉",
+                       "5-4  墨西哥大蒜湯",
+                       "5-5  炸酥餅",
+                       "5-6  驚喜上菜！"
+                      ]      
+      },  
+      {
+         "UnitID": "6",
+         "UnitName": "溫馨的美國西南方料理",
+         "UnitEng": "Heartwarming Southwestern Meals",
+         "SectionID": "6",
+         "Type": ["VL","VL","VL","VL","VL"],
+         "ChapterID": ["26","27","28","29","30"],
+         "ENG_Title": ["The Hustle and Bustle of a Navajo Indian Market",
+                       "Yummy Chocolate and Lavender Baked Custard",
+                       "Check Out What the Chile Relleno is",
+                       "The Navajo Blessing Ceremony",
+                       "Let's Make Bison Ribeye with Salsa"
+                      ],
+         "CHT_Title": ["6-1  印第安市場熱鬧非凡",
+                       "6-2  巧克力薰衣草烤蛋奶醬",
+                       "6-3  青辣椒包起司",
+                       "6-4  賜福儀式",
+                       "6-5  美洲野牛肋眼排佐莎莎醬"
+                      ]      
+      }     
+   ]
+}
+)

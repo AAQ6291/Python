@@ -4,7 +4,7 @@ import pymssql
 
 class sqlDB():
     def __init__(self):
-        self.host = "61.63.36.252"
+         self.host = "61.63.36.252"
         self.db = "readygosdb"
         self.user = "readygosus"
         self.pwd = "readygoxxx16161396"

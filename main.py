@@ -14,8 +14,8 @@ app = Flask(__name__)  # Flask application 的核心物件
 
 @app.route('/')
 def index():
-    #conn = sqlDBClass.sqlDB()
-    #resList = conn.ExecQuery("SELECT Prd_ID, Prd_Name, SNHead FROM Product")
+    # conn = sqlDBClass.sqlDB()
+    # resList = conn.ExecQuery("SELECT Prd_ID, Prd_Name, SNHead FROM Product")
     # print("資料總筆數(List): ", len(resList))  # 印出resList長度
     return render_template('index.html')
 
@@ -56,6 +56,8 @@ def loginHome():
             name = "Hello！" + resList[0][1]
         return render_template('index.html', name=name)
 
+
+#<script type = "text/javascript" >getMainMenuJson();</script>
 
 @app.route('/logOut')
 def logOut():

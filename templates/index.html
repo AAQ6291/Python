@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<script src="static/js/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/index.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
     /* Full height image header */
 
@@ -32,7 +33,7 @@
                 <span style="padding:48px">
                     {{ name }}
                 </span>
-                <script>block_Display('loginFrm', 'F');</script> {% else %} {% endif %}
+                <script>block_Display('loginFrm', 'F');</script> {% endif %}
             </a>
             <!-- Right-sided navbar links -->
             {% if name %}
@@ -42,8 +43,9 @@
             </div>
             {% endif %}
             <div class="w3-right w3-hide-small">
-                <a href="#contact" class="w3-bar-item w3-button" onclick="block_Display('contact','T');">
-                    <i class="fa fa-envelope"></i> CONTACT</a>
+                <a href="#ContactFrm" class="w3-bar-item w3-button" onclick="block_Display('ContactFrm','T');">
+                    <i class="fa fa-envelope"></i> CONTACT
+                </a>
             </div>
         </div>
     </div>
@@ -66,11 +68,11 @@
             <div>
                 {% if name %}
                 <a href="#MenuFrm" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-right"
-                    onclick="block_Display('MenuFrm','T');">
+                    onclick="block_Display('MenuFrm','T');block_Display('ContactFrm', 'F');">
                     Learn more today</a>
                 {% else %}
                 <a href="#loginFrm" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-right"
-                    onclick="block_Display('loginFrm','T');">
+                    onclick="block_Display('loginFrm','T');block_Display('ContactFrm', 'F');">
                     Login and Learn more today</a>
                 {% endif %}
             </div>
@@ -96,7 +98,9 @@
             精選單元
         </h3>
         <p></p>
-        <div class="w3-row-padding" id="TLC02Menu">
+        <div class="w3-row-padding" id="TLC02_Menu">
+            {% if name %} {% else %} {{ scriptstr }} {% endif %}
+
             <div class="w3-col l2 m6 w3-margin-bottom">
                 <img src=" ../static/images/mbr-1-M1.jpg" alt="P1 " style="width:100% ">
                 <h5>求婚法國大餐</h5>
@@ -146,10 +150,14 @@
                 </p>
             </div>
         </div>
+        <div class="w3-center">
+            <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom">
+                <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-container w3-padding-32 " id="contact " style="display:none ">
+    <div class="w3-container w3-padding-32" id="ContactFrm" style="display:none ">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Contact</h3>
         <p>Lets get in touch and talk about your next project.</p>
         <form action="/action_page.php " target="_blank ">
@@ -162,6 +170,7 @@
             </button>
         </form>
     </div>
+    <!-- Footer -->
 </body>
 
 </html>
