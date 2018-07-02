@@ -21,5 +21,5 @@ function block_Display(idName, bFlag) {
     } else {
         $("#" + idName).css("display", "none");
     }
-
 }
+

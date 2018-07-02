@@ -1,13 +1,7 @@
-var data_path = "src/";
-var webdt_path = "src/";
-//var webdt_path = "https://storage.googleapis.com/tlcsrc-bucket/tlc02src/src/";   
+var data_path = "static/src/";
+var webdt_path = "static/src/";
+var img_path = "static/images/";
 
-/* MainMenu:主畫面單元 -- index.html */
-var getMainMenuJson = function () {
-    var fileName = "";	//目錄檔案名
-    fileName = webdt_path + 'chapterList.json';
-    getJson(fileName, 'Mainmenu');	  //Get JSON File Data   
-};
 
 //*********************************************************************************//* Get Dia_LXX.json Data (EX. Dia_L01.json)
 //*********************************************************************************
@@ -20,9 +14,6 @@ function getJson(JFileName, fileType) {
         success: function (json) {
             result = json;
             switch (fileType) {
-                case 'All':
-                    processAList(json.chapterlists);
-                    break;
                 case 'Mainmenu':
                     processMenuList(json.chapterlists);
                     break;
@@ -46,7 +37,7 @@ function processMenuList(chapterlists) {
     //Main List
     var PartStr_1 = '<div class="w3-col l2 m6 w3-margin-bottom" id="Menu_P';
     var PartStr_2 = '" > ';
-    var imgStr_1 = '<img src="' + w_path + 'images/mbr-1-M';
+    var imgStr_1 = '<img src="' + img_path + 'mbr-1-M';
     var imgStr_2 = '.jpg" style="width:100%">';
     var PartBtn_1 = '<h5>';
     var PartBtn_2 = '</h5><p>';
@@ -62,7 +53,14 @@ function processMenuList(chapterlists) {
         var row = PartStr_1 + Unit_ID + PartStr_2 + PartBtn_1 + imgStr_1 + Unit_ID + imgStr_2 + PartBtn_1 + chapterlists.UnitName + PartBtn_2 + chapterlists.UnitEng + PartBtn_3;
 
         htmlStr = htmlStr + row + PartEndStr;
-        $('#TLC02_menu').append(htmlStr);
+        $('#TLC02_Menu').append(htmlStr);
         htmlStr = "";
     });
+};
+
+/* MainMenu:主畫面單元 -- index.html */
+var getMainMenuJson = function () {
+    var fileName = "";	//目錄檔案名
+    fileName = webdt_path + 'chapterList.json';
+    getJson(fileName, 'Mainmenu');	  //Get JSON File Data   
 };

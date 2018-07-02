@@ -11,7 +11,6 @@
 <link rel="stylesheet" type="text/css" href="static/css/index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script type="text/javascript" src="static/js/index.js"></script>
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
     /* Full height image header */
@@ -94,74 +93,27 @@
 
     <!-- Menu Section -->
     <div class="w3-container w3-padding-32" id="MenuFrm" style="display:none">
+        {% if name %}
+        <script type="text/javascript" src="static/js/menulst.js"></script>
+        <script type="text/javascript">                       
+            getMainMenuJson();
+        </script> {% endif %}
+
         <h3 class="w3-border-top w3-border-bottom w3-border-light-grey w3-padding-16">
             精選單元
         </h3>
+
         <p></p>
         <div class="w3-row-padding" id="TLC02_Menu">
-            {% if name %}
-            <script type="text/javascript" src="static/js/menulst.js"></script>
-            <script type="text/javascript">                       
-                getMainMenuJson();
-            </script> {% endif %}
-
-            <div class="w3-col l2 m6 w3-margin-bottom">
-                <img src=" ../static/images/mbr-1-M1.jpg" alt="P1 " style="width:100% ">
-                <h5>求婚法國大餐</h5>
-                <p>A French Dinner with a Marriage Proposal</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
-            <div class="w3-col l2 m6 w3-margin-bottom ">
-                <img src=" ../static/images/mbr-1-M2.jpg" alt="P2 " style="width:100% ">
-                <h5>夏令營快樂兒童餐</h5>
-                <p>Happy Meals for Happy Campers</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
-            <div class="w3-col l2 m6 w3-margin-bottom ">
-                <img src=" ../static/images/mbr-1-M3.jpg" alt="P3 " style="width:100% ">
-                <h5>有益心臟的健康生日餐</h5>
-                <p>Heart-Healthy Meals for the Birthday Girls</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
-            <div class="w3-col l2 m6 w3-margin-bottom ">
-                <img src=" ../static/images/mbr-1-M4.jpg" alt="P4 " style="width:100% ">
-                <h5>結婚周年的海陸大餐</h5>
-                <p>Gourmet Seafood Dinner for an Anniversary</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
-            <div class="w3-col l2 m6 w3-margin-bottom ">
-                <img src=" ../static/images/mbr-1-M5.jpg" alt="P4 " style="width:100% ">
-                <h5>嗆辣墨西哥料理</h5>
-                <p>Try This Spicy Mexican Cuisine</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
-            <div class="w3-col l2 m6 w3-margin-bottom ">
-                <img src=" ../static/images/mbr-1-M6.jpg" alt="P4 " style="width:100% ">
-                <h5>溫馨的美國西南方料理</h5>
-                <p>Heartwareming Southwestern Meals</p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-block ">Start Learning</button>
-                </p>
-            </div>
         </div>
         <div class="w3-center">
-            <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom">
-                <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <a href="#" class=" w3-button w3-black w3-padding-large w3-margin-bottom ">
+                <i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-container w3-padding-32" id="ContactFrm" style="display:none ">
+    <div class="w3-container w3-padding-32 " id="ContactFrm " style="display:none ">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Contact</h3>
         <p>Lets get in touch and talk about your next project.</p>
         <form action="/action_page.php " target="_blank ">
