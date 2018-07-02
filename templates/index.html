@@ -99,7 +99,11 @@
         </h3>
         <p></p>
         <div class="w3-row-padding" id="TLC02_Menu">
-            {% if name %} {% else %} {{ scriptstr }} {% endif %}
+            {% if name %}
+            <script type="text/javascript" src="static/js/menulst.js"></script>
+            <script type="text/javascript">                       
+                getMainMenuJson();
+            </script> {% endif %}
 
             <div class="w3-col l2 m6 w3-margin-bottom">
                 <img src=" ../static/images/mbr-1-M1.jpg" alt="P1 " style="width:100% ">

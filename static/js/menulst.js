@@ -12,35 +12,29 @@ var getMainMenuJson = function () {
 //*********************************************************************************//* Get Dia_LXX.json Data (EX. Dia_L01.json)
 //*********************************************************************************
 function getJson(JFileName, fileType) {
-    switch (openType) {
-        case 'file:':
-            break;
-        default:
-            $.ajax({
-                url: JFileName,
-                dataType: 'jsonp',
-                jsonpCallback: 'callback',
-                // this method is called when the request is successful
-                success: function (json) {
-                    result = json;
-                    switch (fileType) {
-                        case 'All':
-                            processAList(json.chapterlists);
-                            break;
-                        case 'Mainmenu':
-                            processMenuList(json.chapterlists);
-                            break;
-                        default:
-                            break;
-                    }
-                },
+    $.ajax({
+        url: JFileName,
+        dataType: 'jsonp',
+        jsonpCallback: 'callback',
+        // this method is called when the request is successful
+        success: function (json) {
+            result = json;
+            switch (fileType) {
+                case 'All':
+                    processAList(json.chapterlists);
+                    break;
+                case 'Mainmenu':
+                    processMenuList(json.chapterlists);
+                    break;
+                default:
+                    break;
+            }
+        },
 
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert(textStatus + ' : ' + errorThrown);
-                }
-            });
-            break;
-    }
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(textStatus + ' : ' + errorThrown);
+        }
+    });
 }
 
 //*************************************************************************
