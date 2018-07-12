@@ -56,8 +56,13 @@ def loginHome():
             name = "Hello！" + resList[0][1]
         return render_template('index.html', name=name)
 
+# 課程頁面
 
-#<script type = "text/javascript" >getMainMenuJson();</script>
+
+@app.route('/courses/<username>')
+def courses(username):
+    return render_template('courses.html', name=username)
+
 
 @app.route('/logOut')
 def logOut():

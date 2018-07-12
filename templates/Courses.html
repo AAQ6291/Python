@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>Courses with W3.css Template</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script type="text/javascript" src="../static/js/index.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body class="w3-light-grey">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="http://www.liveabc.com/index.asp" class="w3-bar-item w3-button w3-wide">
+                LOGO {% if name %}
+                <span style="padding:48px">
+                    {{ name }}
+                </span>
+                {% endif %}
+            </a>
+            <!-- Right-sided navbar links -->
+            {% if name %}
+            <div class="w3-right w3-hide-small">
+                <a href="../logOut" class="w3-bar-item w3-button">
+                    <i class="fa fa-sign-out"></i> LogOut</a>
+            </div>
+            {% endif %}
+            <div class="w3-right w3-hide-small">
+                <a href="#ContactFrm" class="w3-bar-item w3-button" onclick="block_Display('ContactFrm','T');">
+                    <i class="fa fa-envelope"></i> CONTACT
+                </a>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <!-- Page Container -->
+    <div class="w3-container w3-padding-48" style="max-width:1400px;">
+        <div class="w3-row-padding">
+            <!-- Left Column -->
+            <div class="w3-third">
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="../static/images/mbr-1-M1.jpg " style="width:60% ">
+                        <div class="w3-display-bottomleft w3-container w3-text-black ">
+                            <h2>求婚法國大餐</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container ">
+                        <p>
+                            <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal "></i>重點單字解說
+                        </p>
+                        <p>
+                            <i class="fa fa-paw fa-fw w3-margin-right w3-large w3-text-teal "></i>學習重點</p>
+                        <p>
+                            <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal "></i>ex@liveabc.com</p>
+                        <hr>
+
+                        <p class="w3-large">
+                            <b>
+                                <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal "></i>Our Courses</b>
+                        </p>
+                        <p id="Part1" class="w3-margin w3-text-dark-gray">
+                            <span id="u1" class="w3-badge w3-lime">5</span>
+                            <span>Part 1 求婚法國大餐</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(1)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn1">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a class="w3-bar-item w3-text-teal">
+                                    <b>
+                                        <i class="fa fa-caret-right w3-margin-right"></i>1-1 浪漫的葛利夫</b>
+                                </a>
+                                <a href="#" class="w3-bar-item w3-button">1-2 紅酒燉牛肉</a>
+                                <a href="#" class="w3-bar-item w3-button">1-3 干貝番茄沙拉</a>
+                                <a href="#" class="w3-bar-item w3-button">1-4 女主角回來，上菜囉！</a>
+                                <a href="#" class="w3-bar-item w3-button">1-5 起司薰衣草蜂蜜，外加求婚戒指！</a>
+                            </div>
+                        </p>
+                        <p id="Part2" class="w3-margin w3-text-dark-gray">
+                            <span id="u2" class="w3-badge w3-lime">5</span>
+                            <span>Part 2 夏令營快樂兒童</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(2)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn2">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a href="#" class="w3-bar-item w3-button">2-1 充滿愛的輔導員「影子」</a>
+                                <a href="#" class="w3-bar-item w3-button">2-2 活潑的夏令營小朋友</a>
+                                <a href="#" class="w3-bar-item w3-button">2-3 歐芹大蒜奶油醬</a>
+                                <a href="#" class="w3-bar-item w3-button">2-4 龍蝦比薩</a>
+                                <a href="#" class="w3-bar-item w3-button">2-5 鮮桃覆盆子優格冰淇淋聖代</a>
+                            </div>
+                        </p>
+                        <p id="Part3" class="w3-margin w3-text-dark-gray">
+                            <span id="u3" class="w3-badge w3-lime">4</span>
+                            <span>Part 3 有益心臟的健康生日餐</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(3)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn3">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a href="#" class="w3-bar-item w3-button">3-1 互相扶持的雙胞胎姊妹</a>
+                                <a href="#" class="w3-bar-item w3-button">3-2 天使蛋糕</a>
+                                <a href="#" class="w3-bar-item w3-button">3-3 西班牙冷湯</a>
+                                <a href="#" class="w3-bar-item w3-button">3-4 雞肉菠菜沙拉</a>
+                            </div>
+                        </p>
+                        <p id="Part4" class="w3-margin w3-text-dark-gray">
+                            <span id="u4" class="w3-badge w3-lime">5</span>
+                            <span>Part 4 結婚週年的海鮮大餐</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(4)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn3">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a href="#" class="w3-bar-item w3-button">4-1 帥氣牛仔戴爾</a>
+                                <a href="#" class="w3-bar-item w3-button">4-2 烤干貝蠶豆沙拉</a>
+                                <a href="#" class="w3-bar-item w3-button">4-3 鱸魚烤蛤餐</a>
+                                <a href="#" class="w3-bar-item w3-button">4-4 藍莓小蛋糕</a>
+                                <a href="#" class="w3-bar-item w3-button">4-5 享受完美的結婚紀念日</a>
+                            </div>
+                        </p>
+                        <p id="Part5" class="w3-margin w3-text-dark-gray">
+                            <span id="u5" class="w3-badge w3-lime">6</span>
+                            <span>Part 5 嗆辣墨西哥料理</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(5)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn3">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain5" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a href="#" class="w3-bar-item w3-button">5-1 愛搞笑的消防員雷伊</a>
+                                <a href="#" class="w3-bar-item w3-button">5-2 採買辣椒，策劃驚喜</a>
+                                <a href="#" class="w3-bar-item w3-button">5-3 辣椒燉豬肉</a>
+                                <a href="#" class="w3-bar-item w3-button">5-4 墨西哥大蒜湯</a>
+                                <a href="#" class="w3-bar-item w3-button">5-5 炸酥餅</a>
+                                <a href="#" class="w3-bar-item w3-button">5-6 驚喜上菜！</a>
+                            </div>
+                        </p>
+                        <p id="Part6" class="w3-margin w3-text-dark-gray">
+                            <span id="u6" class="w3-badge w3-lime">5</span>
+                            <span>Part 6 溫馨的美國西南方料理</span>
+                            <span class="w3-margin">
+                                <a onclick="myCourFunc(6)" href="javascript:void(0)" class="w3-button w3-white w3-left-align" id="myBtn3">
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </span>
+                            <div id="CourseMain6" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                                <a href="#" class="w3-bar-item w3-button">6-1 印第安市場熱鬧非凡</a>
+                                <a href="#" class="w3-bar-item w3-button">6-2 巧克力薰衣草烤蛋奶醬</a>
+                                <a href="#" class="w3-bar-item w3-button">6-3 青辣椒包起司</a>
+                                <a href="#" class="w3-bar-item w3-button">6-4 賜福儀式</a>
+                                <a href="#" class="w3-bar-item w3-button">6-5 美洲野牛肋眼排佐莎莎醬</a>
+                            </div>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird ">
+                <div class="w3-container w3-card w3-white w3-margin-bottom ">
+                    <h3 class="w3-text-grey w3-padding-16 ">
+                        <i class="fa fa-video-camera fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Video Courses : 1-1 Meet This Romantic Guy, Griff Gilbert</h3>
+                    <div class="w3-container">
+                        <div style="width:560px">
+                            <video id="video1" width="560">
+                                <source src="../static/src/media/mp4/L01.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+                            </video>
+                            <div class="w3-grey w3-small" style="width:560px">
+                                <div class="w3-center w3-teal" style="width:0.1%">0%</div>
+                            </div>
+                            <div class="w3-light-grey">
+                                影片控制列
+                                <button onclick="videoPlay()">Play/Pause</button>
+                                <button onclick="videoStop()">Stop</button>
+                                <button onclick="videoRepeat()">Repeat</button>
+                                <button onclick="videoZoom()">Zoom</button>
+
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white ">
+                    <h2 class="w3-text-grey w3-padding-16 ">
+                        <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Article Courses</h2>
+                    <div class="w3-container ">
+                        <h5 class="w3-opacity ">
+                            <b>W3Schools.com</b>
+                        </h5>
+                        <h6 class="w3-text-teal ">
+                            <i class="fa fa-calendar fa-fw w3-margin-right "></i>Forever</h6>
+                        <p>Web Development! All I need to know in one place</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+</body>
+
+</html>

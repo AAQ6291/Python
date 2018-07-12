@@ -189,3 +189,7 @@ nav li {
   -o-transition: all 0.2s;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
