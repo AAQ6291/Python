@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="../static/css/index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script type="text/javascript" src="../static/js/index.js"></script>
+<script type="text/javascript" src="../static/js/audioullist.js"></script>
+<script type="text/javascript" src="../static/js/audiodivlist.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../static/css/icon.css">
 
@@ -182,45 +184,31 @@
                             <div class="w3-large" align="center">
                                 1-1 Meet This Romantic Guy, Griff Gilbert
                             </div>
-                            <video controls id="video1" width="680">
+                            <video id="myVideo" width="680px">
                                 <source src="../static/src/media/mp4/L01.mp4" type="video/mp4"> Your browser does not support HTML5 video.
                             </video>
+
                             <!--
                             <div class="w3-grey w3-small" style="width:680px">
                                 <div class="w3-center w3-teal" style="width:0.1%">0%</div>
                             </div>
                              -->
-                            <div id="media-controls" class="w3-light-grey w3-padding-16">
-                                影片控制列
-                                <button class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime" onclick="videoPlay()">
-                                    <span class="fa fa-play"></span>
-                                </button>
-                                <button class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime" onclick="videoStop()">
-                                    <span class="fa fa-stop"></span>
-                                </button>
-                                <button class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime" onclick="videoRepeat()">
-                                    <span class="fa fa-repeat"></span>
-                                </button>
-                                <button class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime" onclick="videoZoom()">
-                                    <span class="fa fa-arrows-alt"></span>
-                                </button>
+                            <div id="media-controls" class="w3-row w3-light-grey w3-padding-16">
+                                <div class="w3-col m8 w3-center">
+                                    <input id="seekBar" type="range" min="0" max="100" style="width:400px" value="0" onchange="rangevalue.value=value">
+                                    <output id="rangevalue">0.0% </output>
+                                </div>
+                                <div class="w3-col m4 w3-center">
+                                    <button id="playBtn" class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime fa fa-play">
+                                    </button>
+                                    <button id="stopBtn" class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime fa fa-stop">
+                                    </button>
+
+                                    <button class="w3-btn w3-white w3-border w3-border-lime w3-round w3-hover-lime fa fa-arrows-alt">
+                                    </button>
+
+                                </div>
                             </div>
-                            <!--                            
-                            <div id="tracks">
-                                <a id="btnPrev" title="上一句">
-                                    <i class="material-icons-orange-l3 fa fa-step-backward"></i>
-                                </a>
-                                <a id="btnPlay-Pause" title="播放 / 暫停">
-                                    <i class="material-icons-green fa fa-play" aria-hidden="true"></i>
-                                </a>
-                                <a id="btnStop" title="停止">
-                                    <i class="material-icons-magenta-l4 fa fa-stop" aria-hidden="true"></i>
-                                </a>
-                                <a id="btnNext" title="下一句">
-                                    <i class="material-icons-orange-l3 fa fa-step-forward" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        -->
                         </div>
                         <hr>
                     </div>
@@ -245,7 +233,7 @@
         </div>
         <!-- End Page Container -->
     </div>
-
+    <script type="text/javascript " src="../static/js/Video.js "></script>
 </body>
 
 </html>
