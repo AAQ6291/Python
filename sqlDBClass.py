@@ -7,7 +7,7 @@ class sqlDB():
         self.host = "61.63.36.252"
         self.db = "readygo"
         self.user = "readygo"
-        self.pwd = "readygo16161396"
+        self.pwd = "readygo1616xx1396"
 
     def __GetConnect(self):
         try:
